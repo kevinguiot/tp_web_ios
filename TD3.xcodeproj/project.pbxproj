@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB14D3C91E3242E80047C422 /* MyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14D3C81E3242E80047C422 /* MyWebViewController.swift */; };
+		DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18064F1E2CF93100919A8F /* AppDelegate.swift */; };
+		DB1806521E2CF93100919A8F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806511E2CF93100919A8F /* FirstViewController.swift */; };
+		DB1806541E2CF93100919A8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806531E2CF93100919A8F /* SecondViewController.swift */; };
+		DB1806571E2CF93100919A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1806551E2CF93100919A8F /* Main.storyboard */; };
+		DB1806591E2CF93100919A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1806581E2CF93100919A8F /* Assets.xcassets */; };
+		DB18065C1E2CF93100919A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB18065A1E2CF93100919A8F /* LaunchScreen.storyboard */; };
+		DB1806671E2CF93100919A8F /* TD3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806661E2CF93100919A8F /* TD3Tests.swift */; };
+		DB1806721E2CF93100919A8F /* TD3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806711E2CF93100919A8F /* TD3UITests.swift */; };
+		DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */; };
+		DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB1806631E2CF93100919A8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1806441E2CF93100919A8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB18064B1E2CF93100919A8F;
+			remoteInfo = TD3;
+		};
+		DB18066E1E2CF93100919A8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB1806441E2CF93100919A8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB18064B1E2CF93100919A8F;
+			remoteInfo = TD3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB14D3C81E3242E80047C422 /* MyWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWebViewController.swift; sourceTree = "<group>"; };
+		DB18064C1E2CF93100919A8F /* TD3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TD3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB18064F1E2CF93100919A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB1806511E2CF93100919A8F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DB1806531E2CF93100919A8F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DB1806561E2CF93100919A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB1806581E2CF93100919A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB18065B1E2CF93100919A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB18065D1E2CF93100919A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1806621E2CF93100919A8F /* TD3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TD3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1806661E2CF93100919A8F /* TD3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD3Tests.swift; sourceTree = "<group>"; };
+		DB1806681E2CF93100919A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB18066D1E2CF93100919A8F /* TD3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TD3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1806711E2CF93100919A8F /* TD3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD3UITests.swift; sourceTree = "<group>"; };
+		DB1806731E2CF93100919A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageControllerViewController.swift; sourceTree = "<group>"; };
+		DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsitesTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB1806491E2CF93100919A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB18065F1E2CF93100919A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB18066A1E2CF93100919A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB1806431E2CF93100919A8F = {
+			isa = PBXGroup;
+			children = (
+				DB18064E1E2CF93100919A8F /* TD3 */,
+				DB1806651E2CF93100919A8F /* TD3Tests */,
+				DB1806701E2CF93100919A8F /* TD3UITests */,
+				DB18064D1E2CF93100919A8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB18064D1E2CF93100919A8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB18064C1E2CF93100919A8F /* TD3.app */,
+				DB1806621E2CF93100919A8F /* TD3Tests.xctest */,
+				DB18066D1E2CF93100919A8F /* TD3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB18064E1E2CF93100919A8F /* TD3 */ = {
+			isa = PBXGroup;
+			children = (
+				DB18064F1E2CF93100919A8F /* AppDelegate.swift */,
+				DB1806511E2CF93100919A8F /* FirstViewController.swift */,
+				DB1806531E2CF93100919A8F /* SecondViewController.swift */,
+				DB1806551E2CF93100919A8F /* Main.storyboard */,
+				DB1806581E2CF93100919A8F /* Assets.xcassets */,
+				DB18065A1E2CF93100919A8F /* LaunchScreen.storyboard */,
+				DB18065D1E2CF93100919A8F /* Info.plist */,
+				DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */,
+				DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */,
+				DB14D3C81E3242E80047C422 /* MyWebViewController.swift */,
+			);
+			path = TD3;
+			sourceTree = "<group>";
+		};
+		DB1806651E2CF93100919A8F /* TD3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1806661E2CF93100919A8F /* TD3Tests.swift */,
+				DB1806681E2CF93100919A8F /* Info.plist */,
+			);
+			path = TD3Tests;
+			sourceTree = "<group>";
+		};
+		DB1806701E2CF93100919A8F /* TD3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB1806711E2CF93100919A8F /* TD3UITests.swift */,
+				DB1806731E2CF93100919A8F /* Info.plist */,
+			);
+			path = TD3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB18064B1E2CF93100919A8F /* TD3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1806761E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3" */;
+			buildPhases = (
+				DB1806481E2CF93100919A8F /* Sources */,
+				DB1806491E2CF93100919A8F /* Frameworks */,
+				DB18064A1E2CF93100919A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TD3;
+			productName = TD3;
+			productReference = DB18064C1E2CF93100919A8F /* TD3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB1806611E2CF93100919A8F /* TD3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1806791E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3Tests" */;
+			buildPhases = (
+				DB18065E1E2CF93100919A8F /* Sources */,
+				DB18065F1E2CF93100919A8F /* Frameworks */,
+				DB1806601E2CF93100919A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB1806641E2CF93100919A8F /* PBXTargetDependency */,
+			);
+			name = TD3Tests;
+			productName = TD3Tests;
+			productReference = DB1806621E2CF93100919A8F /* TD3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB18066C1E2CF93100919A8F /* TD3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB18067C1E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3UITests" */;
+			buildPhases = (
+				DB1806691E2CF93100919A8F /* Sources */,
+				DB18066A1E2CF93100919A8F /* Frameworks */,
+				DB18066B1E2CF93100919A8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB18066F1E2CF93100919A8F /* PBXTargetDependency */,
+			);
+			name = TD3UITests;
+			productName = TD3UITests;
+			productReference = DB18066D1E2CF93100919A8F /* TD3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB1806441E2CF93100919A8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "GUIOT Kevin / RUGOLETTO Romuald";
+				TargetAttributes = {
+					DB18064B1E2CF93100919A8F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					DB1806611E2CF93100919A8F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB18064B1E2CF93100919A8F;
+					};
+					DB18066C1E2CF93100919A8F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB18064B1E2CF93100919A8F;
+					};
+				};
+			};
+			buildConfigurationList = DB1806471E2CF93100919A8F /* Build configuration list for PBXProject "TD3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB1806431E2CF93100919A8F;
+			productRefGroup = DB18064D1E2CF93100919A8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB18064B1E2CF93100919A8F /* TD3 */,
+				DB1806611E2CF93100919A8F /* TD3Tests */,
+				DB18066C1E2CF93100919A8F /* TD3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB18064A1E2CF93100919A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB18065C1E2CF93100919A8F /* LaunchScreen.storyboard in Resources */,
+				DB1806591E2CF93100919A8F /* Assets.xcassets in Resources */,
+				DB1806571E2CF93100919A8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1806601E2CF93100919A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB18066B1E2CF93100919A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB1806481E2CF93100919A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1806541E2CF93100919A8F /* SecondViewController.swift in Sources */,
+				DB14D3C91E3242E80047C422 /* MyWebViewController.swift in Sources */,
+				DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */,
+				DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */,
+				DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */,
+				DB1806521E2CF93100919A8F /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB18065E1E2CF93100919A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1806671E2CF93100919A8F /* TD3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1806691E2CF93100919A8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1806721E2CF93100919A8F /* TD3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB1806641E2CF93100919A8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB18064B1E2CF93100919A8F /* TD3 */;
+			targetProxy = DB1806631E2CF93100919A8F /* PBXContainerItemProxy */;
+		};
+		DB18066F1E2CF93100919A8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB18064B1E2CF93100919A8F /* TD3 */;
+			targetProxy = DB18066E1E2CF93100919A8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB1806551E2CF93100919A8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB1806561E2CF93100919A8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB18065A1E2CF93100919A8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB18065B1E2CF93100919A8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB1806741E2CF93100919A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB1806751E2CF93100919A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB1806771E2CF93100919A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TD3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB1806781E2CF93100919A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TD3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DB18067A1E2CF93100919A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TD3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TD3.app/TD3";
+			};
+			name = Debug;
+		};
+		DB18067B1E2CF93100919A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TD3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TD3.app/TD3";
+			};
+			name = Release;
+		};
+		DB18067D1E2CF93100919A8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TD3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TD3;
+			};
+			name = Debug;
+		};
+		DB18067E1E2CF93100919A8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TD3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TD3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB1806471E2CF93100919A8F /* Build configuration list for PBXProject "TD3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1806741E2CF93100919A8F /* Debug */,
+				DB1806751E2CF93100919A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1806761E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1806771E2CF93100919A8F /* Debug */,
+				DB1806781E2CF93100919A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB1806791E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB18067A1E2CF93100919A8F /* Debug */,
+				DB18067B1E2CF93100919A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB18067C1E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB18067D1E2CF93100919A8F /* Debug */,
+				DB18067E1E2CF93100919A8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB1806441E2CF93100919A8F /* Project object */;
+}
