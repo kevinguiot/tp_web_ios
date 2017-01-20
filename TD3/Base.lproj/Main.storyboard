@@ -19,7 +19,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" red="1" green="0.0" blue="0.03079350443" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="LeL-GW-b4T" detailTextLabel="Mfy-Eh-k0U" imageView="HQo-rd-peZ" style="IBUITableViewCellStyleSubtitle" id="ebr-By-JQK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="LeL-GW-b4T" detailTextLabel="Mfy-Eh-k0U" imageView="HQo-rd-peZ" style="IBUITableViewCellStyleSubtitle" id="ebr-By-JQK" colorLabel="IBBuiltInLabel-Yellow">
                                 <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebr-By-JQK" id="l66-vg-ywi">

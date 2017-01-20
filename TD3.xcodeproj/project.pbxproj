@@ -195,7 +195,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "GUIOT Kevin/RUGOLETTO Romuald";
+				ORGANIZATIONNAME = "GUIOT Kevin / RUGOLETTO Romuald";
 				TargetAttributes = {
 					DB18064B1E2CF93100919A8F = {
 						CreatedOnToolsVersion = 8.0;
