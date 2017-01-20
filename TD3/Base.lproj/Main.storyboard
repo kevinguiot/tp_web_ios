@@ -54,7 +54,7 @@
                             <outlet property="delegate" destination="6rP-9v-c4k" id="x68-tb-4Nz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="zbW-yB-LqR"/>
+                    <tabBarItem key="tabBarItem" title="Websites" image="planet-earth" id="zbW-yB-LqR"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="DXf-nw-GAk"/>
                     <connections>
                         <outlet property="ok" destination="asH-bw-J1R" id="Qhr-4Z-p5w"/>
@@ -63,23 +63,24 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="be8-o3-ty4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2463" y="346"/>
+            <point key="canvasLocation" x="-1575" y="784"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Websites-->
         <scene sceneID="AFE-5W-DkH">
             <objects>
                 <navigationController id="lH3-Rw-TeW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Websites" image="planet-earth" id="NZV-UD-0C4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ljt-4n-x3C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6rP-9v-c4k" kind="relationship" relationship="rootViewController" id="Hty-wu-NF4"/>
+                        <segue destination="6rP-9v-c4k" kind="relationship" relationship="rootViewController" id="Dut-aN-WzY"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG5-Vh-ycT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3636" y="346"/>
+            <point key="canvasLocation" x="-2198" y="-123"/>
         </scene>
         <!--RemoteImageController-->
         <scene sceneID="gVe-0E-c9m">
@@ -94,15 +95,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdS-qb-630">
-                                <rect key="frame" x="103" y="557" width="168" height="30"/>
+                                <rect key="frame" x="103" y="28" width="168" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ajouter mon image"/>
+                                <state key="normal" title="Créer une image"/>
                                 <connections>
                                     <action selector="addObjectImage:" destination="Ytf-6M-5Tf" eventType="touchUpInside" id="SeW-5e-dRn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y8-ml-O0A">
-                                <rect key="frame" x="58" y="536" width="259" height="30"/>
+                                <rect key="frame" x="58" y="104" width="259" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Charger une image à partir du web"/>
                                 <connections>
@@ -110,9 +111,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nui-si-Qws">
-                                <rect key="frame" x="134" y="574" width="107" height="30"/>
+                                <rect key="frame" x="98" y="66" width="179" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Parcourir..."/>
+                                <state key="normal" title="Charger une image locale"/>
                                 <connections>
                                     <action selector="definirImage:" destination="Ytf-6M-5Tf" eventType="touchUpInside" id="Z6v-Cy-2Mw"/>
                                 </connections>
@@ -120,11 +121,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Images" id="ZtF-fP-ddF" userLabel="Images"/>
+                    <tabBarItem key="tabBarItem" title="Images" image="picture" selectedImage="picture" id="ZtF-fP-ddF" userLabel="Images"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rd9-he-NbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="630"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="629.2353823088456"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -138,7 +139,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Ytf-6M-5Tf" kind="relationship" relationship="viewControllers" id="71c-ED-ebv"/>
-                        <segue destination="6rP-9v-c4k" kind="relationship" relationship="viewControllers" id="ZOM-WC-vwv"/>
+                        <segue destination="lH3-Rw-TeW" kind="relationship" relationship="viewControllers" id="upu-Nm-4b0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -148,8 +149,7 @@
     </scenes>
     <resources>
         <image name="image2" width="320" height="240"/>
+        <image name="picture" width="24" height="24"/>
+        <image name="planet-earth" width="24" height="24"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Hty-wu-NF4"/>
-    </inferredMetricsTieBreakers>
 </document>

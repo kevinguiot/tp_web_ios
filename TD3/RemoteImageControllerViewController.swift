@@ -10,8 +10,6 @@ import UIKit
 
 class RemoteImageControllerViewController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,55 +22,44 @@ class RemoteImageControllerViewController: UIViewController {
     }
     
     @IBAction func addObjectImage(_ sender: UIButton) {
-        
-        //On créé une image
-        
-        
-        
-        var monImage = UIImageView();
-        
-        
-        
-        self.view.addSubview(monImage);
-        
-        NSLog("ok");
-        
+        let maView = UIImageView(frame: CGRect(x: 0, y: 300, width: view.bounds.width, height: view.bounds.height));
+        maView.backgroundColor = UIColor.darkGray;
+        self.view.addSubview(maView);
     }
     
     @IBAction func definirImage(_ sender: UIButton) {
-
-        //On récupère le nom de l'image
-        let imageName = "image2.png";
         
-        //On récupère l'image voulue à partir de son nom
-        let monImage = UIImage(named: imageName);
+        //On récupère les views
+        let myViews = view.subviews;
         
-        //On ajoute l'image à l'image view
-        let monImageView = UIImageView(image: monImage);
-        
-        //On rajoute l'image à la vue
-        self.view.addSubview(monImageView);
+        //On parcourt les vues
+        for vi : UIView in myViews {
+            if(vi is UIImageView) {
+                let vi2 = vi as! UIImageView;
+                
+                vi2.image = UIImage(named: "image2");
+            }
+        }
     }
-
     
     @IBAction func chargerImageViaWeb(_ sender: UIButton) {
         
         //On récupère l'URL de l'image
-        let imageUrl:URL = URL(string: "http://www.kevinguiot.fr/photo.png")!
+        let imageUrl:URL = URL(string: "http://www.kevinguiot.fr/dog.jpg")!
         
         //On récupère les datas de l'image
         let imageData = NSData(contentsOf: imageUrl)!
-
-        //On créé l'image
-        let imageFromUrl = UIImage(data: imageData as Data);
-
-        //On créé l'imageView
-        let imageView = UIImageView(image: imageFromUrl)
-
-        //On fait en sorte que l'image chargée prend toujours la largeur totale de l'écran
-        imageView.backgroundColor = UIColor.darkGray;
         
-        //On rajoute l'image à la vue
-        self.view.addSubview(imageView);
+        //On récupère les views
+        let myViews = view.subviews;
+        
+        //On parcourt les vues
+        for vi : UIView in myViews {
+            if(vi is UIImageView) {
+                let vi2 = vi as! UIImageView;
+                
+                vi2.image = UIImage(data: imageData as Data);
+            }
+        }
     }
 }

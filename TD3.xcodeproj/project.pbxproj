@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		DB14D3C91E3242E80047C422 /* MyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14D3C81E3242E80047C422 /* MyWebViewController.swift */; };
 		DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18064F1E2CF93100919A8F /* AppDelegate.swift */; };
-		DB1806521E2CF93100919A8F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806511E2CF93100919A8F /* FirstViewController.swift */; };
-		DB1806541E2CF93100919A8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806531E2CF93100919A8F /* SecondViewController.swift */; };
 		DB1806571E2CF93100919A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1806551E2CF93100919A8F /* Main.storyboard */; };
 		DB1806591E2CF93100919A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1806581E2CF93100919A8F /* Assets.xcassets */; };
 		DB18065C1E2CF93100919A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB18065A1E2CF93100919A8F /* LaunchScreen.storyboard */; };
@@ -41,8 +39,6 @@
 		DB14D3C81E3242E80047C422 /* MyWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWebViewController.swift; sourceTree = "<group>"; };
 		DB18064C1E2CF93100919A8F /* TD3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TD3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB18064F1E2CF93100919A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB1806511E2CF93100919A8F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DB1806531E2CF93100919A8F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DB1806561E2CF93100919A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB1806581E2CF93100919A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB18065B1E2CF93100919A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,8 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				DB18064F1E2CF93100919A8F /* AppDelegate.swift */,
-				DB1806511E2CF93100919A8F /* FirstViewController.swift */,
-				DB1806531E2CF93100919A8F /* SecondViewController.swift */,
 				DB1806551E2CF93100919A8F /* Main.storyboard */,
 				DB1806581E2CF93100919A8F /* Assets.xcassets */,
 				DB18065A1E2CF93100919A8F /* LaunchScreen.storyboard */,
@@ -201,7 +195,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "GUIOT Kevin / RUGOLETTO Romuald";
+				ORGANIZATIONNAME = "GUIOT Kevin/RUGOLETTO Romuald";
 				TargetAttributes = {
 					DB18064B1E2CF93100919A8F = {
 						CreatedOnToolsVersion = 8.0;
@@ -271,12 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1806541E2CF93100919A8F /* SecondViewController.swift in Sources */,
 				DB14D3C91E3242E80047C422 /* MyWebViewController.swift in Sources */,
 				DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */,
 				DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */,
 				DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */,
-				DB1806521E2CF93100919A8F /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

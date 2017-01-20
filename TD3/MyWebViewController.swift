@@ -8,36 +8,26 @@
 
 import UIKit
 
-class MyWebViewController: UIViewController {
+
+class MyWebViewController: UIViewController, UIWebViewDelegate {
+    
+    var urlString: String = "";
+    var monWeb = UIWebView();
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        monWeb = UIWebView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height));
+    
+        self.view.addSubview(monWeb);
         
-        //On prépare le webview
-        let monWeb = UIWebView();
+        let monUrl = URL(string: urlString);
+        let monUrlRequest:URLRequest = URLRequest(url: monUrl!);
         
-        //On récupère l'URL 
-        if let url = URL(string: "http://www.google.fr") {
-            
-            let request = URLRequest(url: url);
-            monWeb.loadRequest(request);
-        }
+        monWeb.loadRequest(monUrlRequest);
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
