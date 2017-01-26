@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D89511E917CC197922B2630B /* Pods_TD3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339EF886FC480A4CA2BFC808 /* Pods_TD3.framework */; };
 		DB14D3C91E3242E80047C422 /* MyWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14D3C81E3242E80047C422 /* MyWebViewController.swift */; };
 		DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18064F1E2CF93100919A8F /* AppDelegate.swift */; };
 		DB1806571E2CF93100919A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1806551E2CF93100919A8F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		DB1806671E2CF93100919A8F /* TD3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806661E2CF93100919A8F /* TD3Tests.swift */; };
 		DB1806721E2CF93100919A8F /* TD3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806711E2CF93100919A8F /* TD3UITests.swift */; };
 		DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */; };
+		DBA96D4A1E364FED00C5F524 /* PartiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA96D491E364FED00C5F524 /* PartiesController.swift */; };
 		DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		339EF886FC480A4CA2BFC808 /* Pods_TD3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TD3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A048A428B6BD80A87DADCC3 /* Pods-TD3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TD3.release.xcconfig"; path = "Pods/Target Support Files/Pods-TD3/Pods-TD3.release.xcconfig"; sourceTree = "<group>"; };
+		9101733FE19221B5AC3A32A8 /* Pods-TD3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TD3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TD3/Pods-TD3.debug.xcconfig"; sourceTree = "<group>"; };
 		DB14D3C81E3242E80047C422 /* MyWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWebViewController.swift; sourceTree = "<group>"; };
 		DB18064C1E2CF93100919A8F /* TD3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TD3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB18064F1E2CF93100919A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		DB1806711E2CF93100919A8F /* TD3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD3UITests.swift; sourceTree = "<group>"; };
 		DB1806731E2CF93100919A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageControllerViewController.swift; sourceTree = "<group>"; };
+		DBA96D491E364FED00C5F524 /* PartiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartiesController.swift; path = ../PartiesController.swift; sourceTree = "<group>"; };
 		DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsitesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89511E917CC197922B2630B /* Pods_TD3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31AF24A9D5A2C6078EF253B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339EF886FC480A4CA2BFC808 /* Pods_TD3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52F83C8F35ACE4247122D767 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9101733FE19221B5AC3A32A8 /* Pods-TD3.debug.xcconfig */,
+				7A048A428B6BD80A87DADCC3 /* Pods-TD3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB1806431E2CF93100919A8F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,8 @@
 				DB1806651E2CF93100919A8F /* TD3Tests */,
 				DB1806701E2CF93100919A8F /* TD3UITests */,
 				DB18064D1E2CF93100919A8F /* Products */,
+				52F83C8F35ACE4247122D767 /* Pods */,
+				31AF24A9D5A2C6078EF253B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +135,7 @@
 				DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */,
 				DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */,
 				DB14D3C81E3242E80047C422 /* MyWebViewController.swift */,
+				DBA96D491E364FED00C5F524 /* PartiesController.swift */,
 			);
 			path = TD3;
 			sourceTree = "<group>";
@@ -138,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB1806761E2CF93100919A8F /* Build configuration list for PBXNativeTarget "TD3" */;
 			buildPhases = (
+				3BD49992DFCDA5D743A5BBF4 /* [CP] Check Pods Manifest.lock */,
 				DB1806481E2CF93100919A8F /* Sources */,
 				DB1806491E2CF93100919A8F /* Frameworks */,
 				DB18064A1E2CF93100919A8F /* Resources */,
+				BD160C5494F023B66ACDC3D0 /* [CP] Embed Pods Frameworks */,
+				4682B14BBA99E8887C020C45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,7 +224,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "GUIOT Kevin / RUGOLETTO Romuald";
 				TargetAttributes = {
 					DB18064B1E2CF93100919A8F = {
@@ -260,6 +290,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BD49992DFCDA5D743A5BBF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4682B14BBA99E8887C020C45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TD3/Pods-TD3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD160C5494F023B66ACDC3D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TD3/Pods-TD3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB1806481E2CF93100919A8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,6 +347,7 @@
 				DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */,
 				DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */,
 				DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */,
+				DBA96D4A1E364FED00C5F524 /* PartiesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -391,6 +471,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,6 +499,7 @@
 		};
 		DB1806771E2CF93100919A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9101733FE19221B5AC3A32A8 /* Pods-TD3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TD3/Info.plist;
@@ -430,6 +512,7 @@
 		};
 		DB1806781E2CF93100919A8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A048A428B6BD80A87DADCC3 /* Pods-TD3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TD3/Info.plist;

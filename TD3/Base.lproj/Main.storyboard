@@ -140,14 +140,65 @@
                     <connections>
                         <segue destination="Ytf-6M-5Tf" kind="relationship" relationship="viewControllers" id="71c-ED-ebv"/>
                         <segue destination="lH3-Rw-TeW" kind="relationship" relationship="viewControllers" id="upu-Nm-4b0"/>
+                        <segue destination="Jhc-u7-69Y" kind="relationship" relationship="viewControllers" id="ng6-cw-7A1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-681" y="-151"/>
         </scene>
+        <!--Partie-->
+        <scene sceneID="7YT-Rl-9RF">
+            <objects>
+                <tableViewController id="Jhc-u7-69Y" customClass="PartiesController" customModule="TD3" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" sectionHeaderHeight="28" sectionFooterHeight="28" id="76b-1g-DKl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="50" reuseIdentifier="prototype" rowHeight="180" id="hDX-Oz-zhf" customClass="Cellule" customModule="TD3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hDX-Oz-zhf" id="uFN-M1-xR9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a2d70780730bf9404fbc2cb78661877c" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dd5-Ne-f6X">
+                                            <rect key="frame" x="0.0" y="0.0" width="147" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dax-94-kSL">
+                                            <rect key="frame" x="284" y="0.0" width="91" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.69411764710000001" green="0.0" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="heure" destination="dax-94-kSL" id="vqe-hy-uue"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jhc-u7-69Y" id="DqT-Ya-xRn"/>
+                            <outlet property="delegate" destination="Jhc-u7-69Y" id="QM4-kT-LIq"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Partie" id="sOp-JM-fv1"/>
+                    <connections>
+                        <outlet property="monTableau" destination="76b-1g-DKl" id="MM7-rW-Ebe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sj0-e9-YFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-152.47376311844079"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="a2d70780730bf9404fbc2cb78661877c" width="480" height="640"/>
         <image name="image2" width="320" height="240"/>
         <image name="picture" width="24" height="24"/>
         <image name="planet-earth" width="24" height="24"/>
