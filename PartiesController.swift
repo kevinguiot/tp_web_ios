@@ -18,14 +18,13 @@ class Cellule: UITableViewCell {
 }
 
 
-
 class PartiesController: UITableViewController {
     
     //On créé un tableau d'Event
     var eventsList = [Event]();
     
     @IBOutlet var monTableau: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,9 +71,6 @@ class PartiesController: UITableViewController {
         } else {
             // the URL was bad!
         }
-
-        
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
