@@ -8,13 +8,13 @@
 
 import UIKit
 import SWXMLHash
+import Foundation
 
 class Cellule: UITableViewCell {
-    
-    @IBOutlet weak var date: UILabel!
     @IBOutlet weak var heure: UILabel!
-
-    
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var nom: UILabel!
+    @IBOutlet weak var flyer: UIImageView!
 }
 
 
@@ -61,7 +61,7 @@ class PartiesController: UITableViewController {
                     let flyer = element.attribute(by: "flyer")!.text;
 
                     //On définit l'événement
-                    let event = Event(id: id!, date: date, name: name, desc: desc, flyer: flyer);
+                    let event = Event(id: id!, dateString: date, name: name, desc: desc, flyer: flyer);
                     
                     //On rajoute l'événement dans le tableau
                     eventsList.append(event);
@@ -102,44 +102,30 @@ class PartiesController: UITableViewController {
         return self.eventsList.count;
     }
     
-    /*
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
-    }*/
-
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //On récupère la cellule
         let cell = tableView.dequeueReusableCell(withIdentifier: "prototype", for: indexPath) as! Cellule
-        
-        
-        
-        //cell.date.text = "ok"
-        
-        
-        
-        
-        /*cell.date.text = "date";
-        cell.heure.text = "heure";
- */
-        /*
-        
-        cell.nameLbl.text = self.websites[indexPath.row].name
-        cell.urlLbl.text = self.websites[indexPath.row].url*/
-        
        
-        /*
+        //On récupère l'événement
+        let event = eventsList[indexPath.row];
+        
+        //On récupère le favicon du lien
+        let imageUrl:URL = URL(string: event.Flyer)!
+        
+        //On récupère les datas de l'image
+        let imageData = NSData(contentsOf: imageUrl)!
+        
+        //On mets à jour la cellule
+        cell.date?.text = "Le " + event.Date;
+        cell.heure?.text = event.Heure + "H";
+        cell.nom?.text = event.Name;
+        cell.flyer?.image = UIImage(data: imageData as Data);
 
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "identifier", for: indexPath)
-
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "identifier", for: indexPath) as! UITableViewCell;
-        
-        
-       
-*/
-        
-        
         return cell
     }
 
@@ -199,19 +185,33 @@ class PartiesController: UITableViewController {
     
 }
 
-
 class Event {
     var Id : Int = 0;
-    var Date : String = "";
+    var Date: String = "";
+    var Heure : String = "";
     var Name : String = "";
     var Desc : String = "";
     var Flyer : String = "";
     
-    init(id : Int, date : String, name : String, desc : String,flyer : String) {
+    init(id : Int, dateString : String, name : String, desc : String,flyer : String) {
+        
+        //On parse le dateString pour y retrouver la date et l'heure
+        var dateStringArr = dateString.components(separatedBy: " ");
+        
+        //On récupère la date
+        var dateArr = dateStringArr[0].components(separatedBy: "-");
+        
+        var date = dateArr[2] + "/" + dateArr[1] + "/" + dateArr[0];
+        
+        //On récupère l'heure
+        var heureArr = dateStringArr[1].components(separatedBy: ":");
+        
+        //On mets à jour les propriétés
         self.Id = id;
-        self.Date = date;
         self.Name = name;
         self.Desc = desc;
         self.Flyer = flyer;
+        self.Date = date;
+        self.Heure = heureArr[0];
     }
 }
