@@ -22,7 +22,6 @@ class Cellule: UITableViewCell {
 class PartiesController: UITableViewController {
     
     //On créé un tableau d'Event
-
     var eventsList = [Event]();
     
     @IBOutlet var monTableau: UITableView!
@@ -201,7 +200,7 @@ class Event {
         //On récupère la date
         var dateArr = dateStringArr[0].components(separatedBy: "-");
         
-        var date = dateArr[2] + "/" + dateArr[1] + "/" + dateArr[0];
+        let date = dateArr[2] + "/" + dateArr[1] + "/" + dateArr[0];
         
         //On récupère l'heure
         var heureArr = dateStringArr[1].components(separatedBy: ":");
