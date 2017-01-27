@@ -74,8 +74,8 @@ class WebsitesTableViewController: UITableViewController {
         maController.urlString = lien;
 
         self.navigationController?.pushViewController(maController, animated: true);
-        self.navigationController?.navigationBar.topItem?.title = nom;
-        self.navigationController?.navigationBar.backItem?.title = nom;
+       /* self.navigationController?.navigationBar.topItem?.title = "top";
+        self.navigationController?.navigationBar.backItem?.title = "back";*/
     }
 }
 
@@ -126,6 +126,5 @@ class CustomTableViewCell: UITableViewCell {
         
         self.detailTextLabel?.frame = CGRect(x: 60, y: 15, width: self.frame.width - 45, height: 29)
         self.detailTextLabel?.backgroundColor = UIColor.lightGray;
-
     }
 }

@@ -17,14 +17,17 @@ class Cellule: UITableViewCell {
     @IBOutlet weak var flyer: UIImageView!
 }
 
+
 class PartiesController: UITableViewController {
     
     //On créé un tableau d'Event
     var eventsList = [Event]();
     
     @IBOutlet var monTableau: UITableView!
+    @IBOutlet var gesture: UITapGestureRecognizer!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         if let url = URL(string: "http://sealounge.lanoosphere.com/seadata_en.xml") {
@@ -65,17 +68,11 @@ class PartiesController: UITableViewController {
                 }
                 
             } catch {
-                // contents could not be loaded
+                NSLog("chargement incorrect")
             }
         } else {
-            // the URL was bad!
+            NSLog("mauvaise URL");
         }
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,7 +100,7 @@ class PartiesController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //On récupère la cellule
-        let cell = tableView.dequeueReusableCell(withIdentifier: "prototype", for: indexPath) as! Cellule
+        let cell = tableView.dequeueReusableCell(withIdentifier: "event", for: indexPath) as! Cellule
        
         //On récupère l'événement
         let event = eventsList[indexPath.row];
@@ -119,7 +116,7 @@ class PartiesController: UITableViewController {
         return cell
     }
 
-    
+    //On charge les images dans un thread
     func loadImage(cellule: Cellule, flyer: String)  {
         
         let queue = DispatchQueue(label: "com.kevinguiot.loadImage");
@@ -132,62 +129,16 @@ class PartiesController: UITableViewController {
             //On récupère les datas de l'image
             let imageData = NSData(contentsOf: imageUrl)!
             
-            //On rajoute l'image
-            cellule.flyer.image = UIImage(data: imageData as Data);
+            //On prépare l'image
+            let image = UIImage(data: imageData as Data);
+            
+            cellule.flyer.image = image;
+            /*
+            let imageView = UIImageView(image: image);
+            
+            cellule.flyer = imageView
+            */
+            
         }
     }
-    
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      /*  let web = self.storyboard?.instantiateViewController(withIdentifier: "MyWebView") as! Cellule
-        web.website = self.websites[indexPath.row]
-        self.navigationController?.pushViewController(web, animated: true)*/
-    }
-    
 }

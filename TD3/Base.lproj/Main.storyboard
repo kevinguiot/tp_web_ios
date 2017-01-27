@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Websites-->
         <scene sceneID="z1d-Fc-NF6">
             <objects>
                 <tableViewController id="6rP-9v-c4k" customClass="WebsitesTableViewController" customModule="TD3" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" red="1" green="0.0" blue="0.03079350443" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="LeL-GW-b4T" detailTextLabel="Mfy-Eh-k0U" imageView="HQo-rd-peZ" style="IBUITableViewCellStyleSubtitle" id="ebr-By-JQK" colorLabel="IBBuiltInLabel-Yellow">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="website" textLabel="LeL-GW-b4T" detailTextLabel="Mfy-Eh-k0U" imageView="HQo-rd-peZ" style="IBUITableViewCellStyleSubtitle" id="ebr-By-JQK" colorLabel="IBBuiltInLabel-Yellow">
                                 <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebr-By-JQK" id="l66-vg-ywi">
@@ -55,7 +55,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Websites" image="planet-earth" id="zbW-yB-LqR"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="DXf-nw-GAk"/>
+                    <navigationItem key="navigationItem" title="Websites" id="DXf-nw-GAk">
+                        <barButtonItem key="backBarButtonItem" title="Retour" id="rYf-Xt-qHJ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="ok" destination="asH-bw-J1R" id="Qhr-4Z-p5w"/>
                         <outlet property="tableView" destination="asH-bw-J1R" id="ohz-la-96o"/>
@@ -156,11 +158,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="50" reuseIdentifier="prototype" rowHeight="280" id="hDX-Oz-zhf" customClass="Cellule" customModule="TD3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="50" reuseIdentifier="event" rowHeight="280" id="hDX-Oz-zhf" customClass="Cellule" customModule="TD3">
                                 <rect key="frame" x="0.0" y="28" width="375" height="280"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="hDX-Oz-zhf" id="uFN-M1-xR9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="{heure}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dax-94-kSL" userLabel="heure">
@@ -188,10 +190,14 @@
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ls-zH-oFR" userLabel="flyer">
                                             <rect key="frame" x="0.0" y="-1" width="180" height="280"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="280" id="DCy-c5-xIv"/>
                                                 <constraint firstAttribute="width" constant="200" id="y4l-r5-gZc" userLabel="width = 180"/>
                                             </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="oCJ-2j-xgb" appends="YES" id="ebo-4d-a8N"/>
+                                            </connections>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="{nom}" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfg-qt-hRX" userLabel="nom">
                                             <rect key="frame" x="200" y="39" width="175" height="240"/>
@@ -235,16 +241,18 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Parties" image="calendar" id="sOp-JM-fv1"/>
                     <connections>
+                        <outlet property="gesture" destination="oCJ-2j-xgb" id="6cq-RZ-KAE"/>
                         <outlet property="monTableau" destination="76b-1g-DKl" id="MM7-rW-Ebe"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sj0-e9-YFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oCJ-2j-xgb"/>
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="-152.47376311844079"/>
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="32" height="32"/>
+        <image name="calendar" width="24" height="24"/>
         <image name="image2" width="320" height="240"/>
         <image name="picture" width="24" height="24"/>
         <image name="planet-earth" width="24" height="24"/>
