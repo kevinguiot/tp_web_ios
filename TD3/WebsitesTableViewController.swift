@@ -37,9 +37,9 @@ class WebsitesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //On récupère les informations
-        var nom = liensArray[indexPath.row].titre;
-        var lien = liensArray[indexPath.row].url;
-        var favicon = (lien + "/favicon.ico");
+        let nom = liensArray[indexPath.row].titre;
+        let lien = liensArray[indexPath.row].url;
+        let favicon = (lien + "/favicon.ico");
         
         //On récupère le favicon du lien
         let imageUrl:URL = URL(string: favicon)!
@@ -64,11 +64,11 @@ class WebsitesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         //On récupère les informations
-        var nom = liensArray[indexPath.row].titre;
-        var lien = liensArray[indexPath.row].url;
+        let nom = liensArray[indexPath.row].titre;
+        let lien = liensArray[indexPath.row].url;
         
         //On créer une instance de web controller
-        var maController = MyWebViewController();
+        let maController = MyWebViewController();
         
         //On précise l'URL du controlelr
         maController.urlString = lien;

@@ -17,6 +17,7 @@
 		DB1806721E2CF93100919A8F /* TD3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1806711E2CF93100919A8F /* TD3UITests.swift */; };
 		DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */; };
 		DBA96D4A1E364FED00C5F524 /* PartiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA96D491E364FED00C5F524 /* PartiesController.swift */; };
+		DBAA1C121E3B4BEF00B43D04 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA1C111E3B4BEF00B43D04 /* Event.swift */; };
 		DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		DB1806731E2CF93100919A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB18067F1E2D0ED700919A8F /* RemoteImageControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageControllerViewController.swift; sourceTree = "<group>"; };
 		DBA96D491E364FED00C5F524 /* PartiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartiesController.swift; path = ../PartiesController.swift; sourceTree = "<group>"; };
+		DBAA1C111E3B4BEF00B43D04 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsitesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				DBF16A1C1E30CB160021EB13 /* WebsitesTableViewController.swift */,
 				DB14D3C81E3242E80047C422 /* MyWebViewController.swift */,
 				DBA96D491E364FED00C5F524 /* PartiesController.swift */,
+				DBAA1C111E3B4BEF00B43D04 /* Event.swift */,
 			);
 			path = TD3;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				DB1806501E2CF93100919A8F /* AppDelegate.swift in Sources */,
 				DB1806801E2D0ED700919A8F /* RemoteImageControllerViewController.swift in Sources */,
 				DBF16A1D1E30CB160021EB13 /* WebsitesTableViewController.swift in Sources */,
+				DBAA1C121E3B4BEF00B43D04 /* Event.swift in Sources */,
 				DBA96D4A1E364FED00C5F524 /* PartiesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9101733FE19221B5AC3A32A8 /* Pods-TD3.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TD3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A048A428B6BD80A87DADCC3 /* Pods-TD3.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TD3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

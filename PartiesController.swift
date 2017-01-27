@@ -17,7 +17,6 @@ class Cellule: UITableViewCell {
     @IBOutlet weak var flyer: UIImageView!
 }
 
-
 class PartiesController: UITableViewController {
     
     //On créé un tableau d'Event
@@ -109,21 +108,34 @@ class PartiesController: UITableViewController {
         //On récupère l'événement
         let event = eventsList[indexPath.row];
         
-        //On récupère le favicon du lien
-        let imageUrl:URL = URL(string: event.Flyer)!
-        
-        //On récupère les datas de l'image
-        let imageData = NSData(contentsOf: imageUrl)!
-        
         //On mets à jour la cellule
         cell.date?.text = "Le " + event.Date;
         cell.heure?.text = event.Heure + "H";
         cell.nom?.text = event.Name;
-        cell.flyer?.image = UIImage(data: imageData as Data);
+
+        //On charge l'image
+        loadImage(cellule:cell, flyer: event.Flyer);
 
         return cell
     }
 
+    
+    func loadImage(cellule: Cellule, flyer: String)  {
+        
+        let queue = DispatchQueue(label: "com.kevinguiot.loadImage");
+        
+        queue.async {
+           
+            //On récupère le favicon du lien
+            let imageUrl:URL = URL(string: flyer)!
+            
+            //On récupère les datas de l'image
+            let imageData = NSData(contentsOf: imageUrl)!
+            
+            //On rajoute l'image
+            cellule.flyer.image = UIImage(data: imageData as Data);
+        }
+    }
     
     
     /*
@@ -178,35 +190,4 @@ class PartiesController: UITableViewController {
         self.navigationController?.pushViewController(web, animated: true)*/
     }
     
-}
-
-class Event {
-    var Id : Int = 0;
-    var Date: String = "";
-    var Heure : String = "";
-    var Name : String = "";
-    var Desc : String = "";
-    var Flyer : String = "";
-    
-    init(id : Int, dateString : String, name : String, desc : String,flyer : String) {
-        
-        //On parse le dateString pour y retrouver la date et l'heure
-        var dateStringArr = dateString.components(separatedBy: " ");
-        
-        //On récupère la date
-        var dateArr = dateStringArr[0].components(separatedBy: "-");
-        
-        let date = dateArr[2] + "/" + dateArr[1] + "/" + dateArr[0];
-        
-        //On récupère l'heure
-        var heureArr = dateStringArr[1].components(separatedBy: ":");
-        
-        //On mets à jour les propriétés
-        self.Id = id;
-        self.Name = name;
-        self.Desc = desc;
-        self.Flyer = flyer;
-        self.Date = date;
-        self.Heure = heureArr[0];
-    }
 }

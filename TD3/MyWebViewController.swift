@@ -8,7 +8,6 @@
  
 import UIKit
 
-
 class MyWebViewController: UIViewController, UIWebViewDelegate {
     
     var urlString: String = "";
