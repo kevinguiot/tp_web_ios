@@ -64,7 +64,6 @@ class WebsitesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         //On récupère les informations
-        let nom = liensArray[indexPath.row].titre;
         let lien = liensArray[indexPath.row].url;
         
         //On créer une instance de web controller
@@ -73,9 +72,8 @@ class WebsitesTableViewController: UITableViewController {
         //On précise l'URL du controlelr
         maController.urlString = lien;
 
+        //On rajoute à la navigation
         self.navigationController?.pushViewController(maController, animated: true);
-       /* self.navigationController?.navigationBar.topItem?.title = "top";
-        self.navigationController?.navigationBar.backItem?.title = "back";*/
     }
 }
 
