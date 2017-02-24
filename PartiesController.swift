@@ -17,7 +17,6 @@ class Cellule: UITableViewCell {
     @IBOutlet weak var flyer: UIImageView!
 }
 
-
 class PartiesController: UITableViewController {
     
     //On créé un tableau d'Event
@@ -44,23 +43,11 @@ class PartiesController: UITableViewController {
                 for i in 0...(events.all.count - 1) {
                     
                     let element = events[i].element!;
-                    
-                    //On récupère l'id
                     let id = Int(element.attribute(by: "id")!.text);
-                    
-                    //On récupère la date
                     let date = element.attribute(by: "date")!.text;
-                    
-                    //On récupère le nom
                     let name = element.attribute(by: "name")!.text;
-                    
-                    //On récupère la description
                     let desc = element.attribute(by: "desc")!.text;
-                    
-                    //On récupère le flyer
                     let flyer = element.attribute(by: "flyer")!.text;
-
-                    //On définit l'événement
                     let event = Event(id: id!, dateString: date, name: name, desc: desc, flyer: flyer);
                     
                     //On rajoute l'événement dans le tableau
@@ -133,12 +120,6 @@ class PartiesController: UITableViewController {
             let image = UIImage(data: imageData as Data);
             
             cellule.flyer.image = image;
-            /*
-            let imageView = UIImageView(image: image);
-            
-            cellule.flyer = imageView
-            */
-            
         }
     }
 }
