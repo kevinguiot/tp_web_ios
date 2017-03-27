@@ -232,15 +232,18 @@
 				TargetAttributes = {
 					DB18064B1E2CF93100919A8F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G5NKU86WUL;
 						ProvisioningStyle = Automatic;
 					};
 					DB1806611E2CF93100919A8F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G5NKU86WUL;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DB18064B1E2CF93100919A8F;
 					};
 					DB18066C1E2CF93100919A8F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = G5NKU86WUL;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DB18064B1E2CF93100919A8F;
 					};
@@ -507,9 +510,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G5NKU86WUL;
 				INFOPLIST_FILE = TD3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinguiot.fr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -521,9 +525,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G5NKU86WUL;
 				INFOPLIST_FILE = TD3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinguiot.fr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -534,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G5NKU86WUL;
 				INFOPLIST_FILE = TD3Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3Tests;
@@ -548,6 +554,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G5NKU86WUL;
 				INFOPLIST_FILE = TD3Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3Tests;
@@ -561,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G5NKU86WUL;
 				INFOPLIST_FILE = TD3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3UITests;
@@ -574,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G5NKU86WUL;
 				INFOPLIST_FILE = TD3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DAM.TD3UITests;
